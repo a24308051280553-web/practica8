@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Primera Página Web</title>
+    
+    <!-- ESTILOS CSS -->
+    <style>
+        /* Configuración general de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f5;
+            color: #333;
+        }
+
+        /* 1. ENCABEZADO */
+        header {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* 2. BARRA DE NAVEGACIÓN */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffca28; /* Cambia a amarillo al pasar el ratón */
+        }
+
+        /* 3. CUERPO PRINCIPAL */
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+        }
+
+        /* ESTILOS DEL FORMULARIO */
+        form {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form p {
+            margin-bottom: 12px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        /* Modificar cajas de texto y menú desplegable */
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Mantiene los bordes alineados */
+        }
+
+        /* Botón Enviar */
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        /* 4. FOOTER (PIE DE PÁGINA) */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. ENCABEZADO -->
+    <header>
+        <h1>Mi Sitio Web Escolar</h1>
+        <p>Página creada para la materia de Informática</p>
+    </header>
+
+    <!-- 2. BARRA DE NAVEGACIÓN -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="file:///C:/Users/Alumno/Desktop/practica8/index1.html">Sobre Mí</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- 3. CUERPO DE LA PÁGINA -->
+    <main>
+
+       
+
+        <!-- Sección del Formulario -->
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+
+            <form>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+                </p>
+
+                <p>
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com">
+                </p>
+
+                <p>
+                    <label for="grado">Grado / Grupo:</label>
+                    <select id="grado" name="grado">
+                        <option>1ro de Preparatoria</option>
+                        <option>2do de Preparatoria</option>
+                        <option>3ro de Preparatoria</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar Formulario">
+                </p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 4. FOOTER (PIE DE PÁGINA) -->
+    <footer>
+        <p>Carlos Oziel Hernandez Garcia|5°I|0553</p>
+    </footer>
+    
+</body>
+</html>
